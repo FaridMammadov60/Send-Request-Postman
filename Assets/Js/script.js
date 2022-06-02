@@ -26,7 +26,7 @@ $(document).ready(function () {
                 country.innerText = response.data.location.country;
                 weather.innerText = response.data.current.temp_c;
                 sky.innerText = response.data.current.condition.text;
-                //skyicon.getAttribute("src") = response.data.current.condition.icon;
+                skyicon.setAttribute("src", response.data.current.condition.icon);
                 localTime.innerText = response.data.location.localtime;
                 $("#c").click(function () {
                     weather.innerText = response.data.current.temp_c;
